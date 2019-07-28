@@ -24,7 +24,7 @@ docker stop <containerID>
 docker start <containerID>
 docker kill <containerID>
 docker run -d -p 15672:15672 --hostname my-rabbitmq --name messageQ rabbitmq:3-management
-docker run -p 8080:8080 -v /var/jenkins_home/:/var/jenkins_home/  -d jenkins
+docker run -d -p 4000:8080 -p 50000:50000 -v /home/ubuntu/jenkins:/var/jenkins_home --name sunil007 jenkins/jenkins
  
 Example to try for volume mount: https://dev.to/jibinliu/how-to-persist-data-in-docker-container-2m72
 
