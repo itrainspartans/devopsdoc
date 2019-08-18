@@ -29,4 +29,4 @@ sudo touch /etc/profile.d/mavenenv.sh
 sudo chmod 777 /etc/profile.d/mavenenv.sh
 echo "export PATH=/opt/maven/bin:$"PATH"" >> /etc/profile.d/mavenenv.sh	
 mvn --version
-apt install maven 3.6.1
+apt install maven 3.6.1 -y
